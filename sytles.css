@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.wrapper {
+  width: 80%;
+  margin: 0 10%;
+}

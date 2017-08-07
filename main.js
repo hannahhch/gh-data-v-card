@@ -16,13 +16,32 @@ fetch('https://api.github.com/users/hannahhch')
         let company = data.company;
         let site = data.blog;
         let bio = data.bio;
+        let login = data.login;
+        let photo = data.avatar_url;
 
-        console.log(`My name is ${name}`);
-        console.log(`My url is ${url}`);
-        console.log(`My email is ${email}`);
-        console.log(`I work at the ${company}`);
-        console.log(`My website is ${site}`);
-        console.log(`My bio is ${bio}`);
+        let markup = `
+          <div class = 'header'>
+            <h1>${name}</h1>
+            </div>
+            <div class = 'info-wrapper'>
+              <div class = 'the-basics'>
+              <h2>The Basics</h2>
+              <h4>Name: ${name}</h4>
+              <h4>GitHub URL: <a href = '${url}'>${login}</a></h4>
+              <h4>Email: ${email}</h4>
+              <h4>Company: ${company}</h4>
+              <h4>Website: <a href = '${site}'>LinkedIn</a></h4>
+            </div>
+          <div class = 'the-bio'>
+            <h2>The Bio</h2>
+            <p>${bio}</p>
+            <img src = ${photo}>
+          </div>
+        </div>
+
+        `
+
+        document.querySelector('.wrapper').innerHTML = markup;
 
       })
     }
