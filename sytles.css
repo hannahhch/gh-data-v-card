@@ -1,22 +1,75 @@
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  background-color: black;
+}
+
 .header {
   display: flex;
   justify-content: center;
+  width: 100%;
+  background-color: #1D1D1D;
+  color: white;
+  margin-top: 10%;
 }
 
+h1 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: lighter;
+  font-size: 55px;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
 
 .info-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: solid black 1px;
+  background-color: white;
+  padding: 2% 15% 5% 15%;
+  height: 200px;
+
 }
+
 
 
 .wrapper {
   width: 80%;
   margin: 0 10%;
+  position: absolute;
+}
+
+.the-basics{
+  width: 30%;
+}
+
+.the-basics-text{
+  line-height: 5px;
+}
+
+.the-bio{
+  width: 65%;
+  margin-left: 5%;
+}
+
+.bio-info{
+  display: flex;
+  flex-direction: row;
 }
 
 #circle {
   border-radius: 50%;
-  width: 100px;
+  max-width: 110px;
+  max-height: 110px;
 }

@@ -25,21 +25,22 @@ fetch('https://api.github.com/users/hannahhch')
             <div class = 'info-wrapper'>
               <div class = 'the-basics'>
               <h2>The Basics</h2>
-              <h4>Name: ${name}</h4>
-              <h4>GitHub URL: <a href = '${url}'>${login}</a></h4>
-              <h4>Email: hannah.hch@gmail.com </h4>
-              <h4>Company: ${company}</h4>
-              <h4>Website: <a href = '${site}'>LinkedIn</a></h4>
+              <div class = 'the-basics-text'>
+                <p>Name: ${name}<p>
+                <p>GitHub URL: <a href = '${url}'>${login}</a></p>
+                <p>Email: hannah.hch@gmail.com </p>
+                <p>Company: ${company}</p>
+                <p>Website: <a href = '${site}'>LinkedIn</a></p>
+                </div>
             </div>
           <div class = 'the-bio'>
             <h2>The Bio</h2>
+            <div class = 'bio-info'>
             <p>${bio}</p>
-            </div>
-          <div class = 'the-photo'>
             <img id = 'circle' src = ${photo}>
+            </div>
           </div>
         </div>
-
         `
 
         document.querySelector('.wrapper').innerHTML = markup;
