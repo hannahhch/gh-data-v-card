@@ -15,3 +15,8 @@
   width: 80%;
   margin: 0 10%;
 }
+
+#circle {
+  border-radius: 50%;
+  width: 100px;
+}

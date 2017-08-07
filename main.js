@@ -12,7 +12,6 @@ fetch('https://api.github.com/users/hannahhch')
       response.json().then(function(data) {
         let name = data.name;
         let url = data.html_url;
-        let email = data.email;
         let company = data.company;
         let site = data.blog;
         let bio = data.bio;
@@ -28,14 +27,16 @@ fetch('https://api.github.com/users/hannahhch')
               <h2>The Basics</h2>
               <h4>Name: ${name}</h4>
               <h4>GitHub URL: <a href = '${url}'>${login}</a></h4>
-              <h4>Email: ${email}</h4>
+              <h4>Email: hannah.hch@gmail.com </h4>
               <h4>Company: ${company}</h4>
               <h4>Website: <a href = '${site}'>LinkedIn</a></h4>
             </div>
           <div class = 'the-bio'>
             <h2>The Bio</h2>
             <p>${bio}</p>
-            <img src = ${photo}>
+            </div>
+          <div class = 'the-photo'>
+            <img id = 'circle' src = ${photo}>
           </div>
         </div>
 
